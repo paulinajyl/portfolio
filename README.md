@@ -16,6 +16,7 @@ https://youtu.be/LP2Z2SsOgUw
 This will be an iterative project that I'm hoping to improve upon while I pick up new skills in the near future!
 
 Some features I want to add:
+<li>A responsive version</li>
 <li>Language option</li>
 <li>Smoother scroll animation</li>
 <li>Popup window/modal element for projects view</li>
