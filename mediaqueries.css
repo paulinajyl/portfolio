@@ -1,0 +1,8 @@
+@media screen and (max-width: 800px) {
+    #header-desktop-nav {
+        display: none;
+    }
+    #header-sandwich-nav {
+        display: flex;
+    }
+}

@@ -1,0 +1,416 @@
+/* GENERAL */
+/* #3A4856 - colour for main stuff like headings */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e3edf8;
+    color: #3A4856;
+
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+
+.p{
+    color: #FFEB90;
+}
+
+/* TRANSITION */
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+nav, .navbar{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    /* viewheight, for responsive typography! */
+    height: 17vh; 
+}
+
+.navbar{
+    /* root element size, changes relative to orig font size */
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}   
+
+a{
+    color: #3F4851;
+    text-decoration: none;
+    text-decoration-color: #FFE3F1;
+}
+
+a:hover{
+    color: #8EAFCE;
+    text-decoration: underline;
+    /* basically pushes down the underline by 1rem */
+    text-underline-offset: 1rem;
+    text-decoration-color: #8EAFCE;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+/* SANDWICH NAV */
+#header-sandwich-nav{
+    display:none;
+}
+
+.sandwich-nav{
+    position: relative;
+    display: inline-block;
+}
+
+.sandwich-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.sandwich-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: #3A4856;
+    transition: all 0.3 ease-in-out;
+}
+
+.sandwichbar{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.sandwichbar a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #3A4856;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.sandwichbar li{
+    list-style: none;
+}
+
+.sandwichbar.open{
+    max-height: 300px;
+}
+
+.sandwich-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.sandwich-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.sandwich-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.sandwich-icon.open span:first-child{
+    transform: none;
+}
+
+.sandwich-icon.open span:first-child{
+    opacity: 1;
+}
+
+.sandwich-icon.open span:first-child{
+    transform: none;
+}
+
+/* SECTION */
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    /* to ensure stuff does not overlap with each other */
+    min-height: fit-content;
+}
+
+.section-container{
+    display: flex;
+}
+
+/* PROFILE */
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_img{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text{
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p{
+    font-weight: 600;
+}
+
+.section_text_p1{
+    text-align: center;
+}
+
+.section_text_p1{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #7E8791;
+}
+
+.title{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    background-color: #B8D3EE;
+    border-radius: 2rem;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: #8EAFCE;
+}
+
+/* ABOUT */
+#about{
+    position: relative;
+}
+
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container{
+    display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+    width: 400px;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    /* rgb(255, 252, 234) */
+    background: transparent;;
+    border-radius: 2rem;
+    border: #7E8791 0.1rem solid;
+    border-color: #7E8791;
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.section_img-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+
+/* EXPERIENCE */
+
+#exp{
+    position: relative;
+}
+
+.experience-sub-title{
+    color: rgb(49, 75, 75);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon{
+    cursor: default;
+}
+
+/* PROJECTS */
+#projects{
+    position: relative;
+}
+
+.color-container{
+    border-color: #7E8791;
+    background: transparent;
+}
+
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title{
+    margin: 1rem;
+    color: rgb(64, 99, 99);
+}
+
+.project-btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: #7E8791 0.1rem solid;
+}
+
+/* CONTACT */
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: #7E8791;
+    border-color: red;
+    background: #B8D3EE;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon{
+    cursor: default;
+}
+
+/* FOOTER */
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom:0;
+}
+
+/* Revealable scroll */
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+/* CSS rule for the active class */
+.revealable.active {
+  transform: translateY(0px);
+  opacity: 1;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="header-desktop-nav">
+        <!--add header stuff here, like logo-->
+        <div class="logo"> </div>
+        <div>
+            <ul class="navbar">
+                <!--add nav bar stuff here-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>  
+        </div>  
+    </nav>
+    <nav id="header-sandwich-nav">
+        <!-- <div class="logo">SLAYR</div> -->
+        <div class="sandwich-nav">
+            <div class="sandwich-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="sandwichbar">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#exp" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#proj" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_img">
+            <img src="/imgs/me.png" alt="Me. Just me.">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hi! I'm</p>
+            <h1 class="title">Paulina</h1>
+            <p class="section_text_p1">an aspiring techie :></p>
+            <div class="btn-container">
+                <button class="btn" onclick="window.open('/JiYoung_Resume.pdf')">Resume</button>
+                <button class="btn" onclick="location.href='/#contact'">Contact</button>
+            </div> 
+        </div>
+
+    </section>
+    <section class="revealable" id="about">
+        <p class="section_text_p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section_img-container">
+                <img src="/imgs/chichi.png" alt="About" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>Currently I'm:</h3>
+                        <br>
+                        <p>- taking care of my brother's hamster Chichi
+                            <br>
+                            - studying for the <b>AWS Cloud Practitioner</b> exam
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="/imgs/minerva.png" alt="Education" class="icon"/>
+                        <h3>Education</h3>
+                        <br>
+                        <p>B. Sc. Bachelors Degree <br> Computer Science and Chemistry</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                <p>I’m a rising senior at Minerva University, double majoring in Computer Science and Chemistry.
+                    I have been to over 14 countries in 5 continents. <br><br>
+                    I’m open to various experiences, but recently I've been hooked in the ML/AI space. I've been going to
+                    AI technology events and conferences in Seoul to stay updated on industry trends.<br><br>
+                    My goal with any experience is to learn, whether that be a technical skill or about new people! 
+                    Below are a variety of projects I’ve worked on, or some cool experiences I’ve had so far :)
+                </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class = "revealable" id="exp">
+        <p class="section_text_p1">Explore my</p>
+        <h1 class="title">Experiences</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Organic Synthesis Lab Intern</h2>
+                     <div class="article-container">
+                                 <h3>Taipei</h3>
+                                 <p>Introduced to building organic compounds in the lab, and how researchers
+                                    use analytic techniques for compound identification.<br>
+                                    Wet lab work.</p>
+                     </div>
+                 </div>
+                 <div class="details-container">
+                    <h2 class="experience-sub-title">Napkins Videographer</h2>
+                     <div class="article-container">
+                                 <h3>Remote</h3>
+                                 <p>Created a short-form video that advertizes the new summer issue of a literary
+                                    arts magazine (Napkins). Increased audience engagement on their
+                                Instagram account by 70%.</p>
+                     </div>
+                 </div>
+                 <div class="details-container">
+                    <h2 class="experience-sub-title">Computational Chemistry Lab Intern</h2>
+                     <div class="article-container">
+                                 <h3>Daejeon</h3>
+                                 <p>Explored numerical integration methods to approximate bond energies within 
+                                    molecules, and created molecular dynamic (MD) simulations on LINUX-based
+                                    environment. 
+                                 </p>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    <!-- My skillset ranges from:
+            <ul>
+                <li>Python</li>
+                <li>Tensorflow</li>
+                <li>Bash</li>
+                <li>Videography</li>
+            </ul> -->
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse my recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="/imgs/sentiment.png" alt="Project 1" class="project-img">
+                        <h2 class="experience-sub-title project-title">Sentiment Analysis</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color project-btn" onclick="location.href='https://www.linkedin.com/in/jynglee/'">
+                                Github
+                            </button>
+                            <button class="btn btn-color project-btn" onclick="location.href='https://paulinajyl.notion.site/JiYoung-Paulina-Lee-289d85be65c84b2284aba164a5217395?p=dc337a8ca1cf471f90e8a141edf5ffb9&pm=c'">
+                            Notion
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="/imgs/pomoduck.png" alt="Project 2" class="project-img">
+                        <h2 class="experience-sub-title project-title">Web Development</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color project-btn" onclick="location.href='https://replit.com/@paulinajyl/PLeeAdvocacyProject9'">
+                                Replit
+                            </button>
+                            <button class="btn btn-color project-btn" onclick="location.href='https://youtu.be/5pOE_O3y0a0'">
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="/imgs/wii.png" alt="Project 3" class="project-img">
+                        <h2 class="experience-sub-title project-title">Inferential Stats</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color project-btn" onclick="location.href='https://github.com/paulinajyl/Inferential_Stats_MarioKart'">
+                                Github
+                            </button>
+                            <button class="btn btn-color project-btn" onclick="location.href='https://paulinajyl.notion.site/JiYoung-Paulina-Lee-289d85be65c84b2284aba164a5217395?p=1dd85969b2c545b2ac895c7141c98ff5&pm=c'">
+                            Notion
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section id="contact">
+        <p class="section_text_p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="/imgs/mail2.png" alt="Email" class="icon contact-icon"/>
+                <p><a href="mailto:paulinalee@uni.minerva.edu">paulinalee@uni.minerva.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="/imgs/linkedin.png" alt="LinkedIn" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul class="navbar">
+                <!--add nav bar stuff here-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#exp">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>    
+        </nav>
+        <p>Copyright &#169; 2024 Paulina Lee</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
