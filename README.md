@@ -10,3 +10,13 @@ I also used skills I learned from the Intro to Web Development course from CodeP
 
 # Demo
 This link shows a quick demonstration of the webpage:
+https://youtu.be/LP2Z2SsOgUw
+
+# Note
+This will be an iterative project that I'm hoping to improve upon while I pick up new skills in the near future!
+
+Some features I want to add:
+<li>Language option</li>
+<li>Smoother scroll animation</li>
+<li>Popup window/modal element for projects view</li>
+<li>An interactive map</li>
