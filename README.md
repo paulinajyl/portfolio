@@ -9,7 +9,7 @@ I also used skills I learned from the Intro to Web Development course from CodeP
 <li>Dark mode toggle</li>
 
 # Demo
-This link shows a quick demonstration of the webpage:
+This link shows a quick demonstration of the webpage: <br>
 https://youtu.be/LP2Z2SsOgUw
 
 # Note
